@@ -12,13 +12,14 @@
 
 | Name | Version |
 |------|---------|
-| aws | ~> 2.31.0 |
+| terraform | >= 0.12 |
+| aws | >= 2.31 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | ~> 2.31.0 |
+| aws | >= 2.31 |
 
 ## Inputs
 
