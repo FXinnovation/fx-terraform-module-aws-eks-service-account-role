@@ -12,24 +12,33 @@
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12 |
-| aws | >= 2.31 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 2.31 |
 
 ## Providers
 
-No provider.
+No providers.
+
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_this"></a> [this](#module\_this) | ../../ | n/a |
+
+## Resources
+
+No resources.
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| access\_key | Credentials: AWS access key. | `string` | n/a | yes |
-| secret\_key | Credentials: AWS secret key. Pass this as a variable, never write password in the code. | `string` | n/a | yes |
+| <a name="input_access_key"></a> [access\_key](#input\_access\_key) | Credentials: AWS access key. | `string` | n/a | yes |
+| <a name="input_secret_key"></a> [secret\_key](#input\_secret\_key) | Credentials: AWS secret key. Pass this as a variable, never write password in the code. | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| this | n/a |
-
+| <a name="output_this"></a> [this](#output\_this) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
