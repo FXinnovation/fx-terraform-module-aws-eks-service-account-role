@@ -7,6 +7,7 @@ output "kubernetes_annotation" {
   value       = { "eks.amazonaws.com/role-arn" = element(concat(aws_iam_role.this.*.arn, list("")), 0) }
 }
 
+
 #####
 # IAM Role
 #####

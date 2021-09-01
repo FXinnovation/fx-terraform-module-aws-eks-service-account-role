@@ -9,6 +9,7 @@ locals {
   }
 }
 
+
 #####
 # Datasources
 #####
@@ -33,6 +34,7 @@ data "aws_iam_policy_document" "this" {
   }
 }
 
+
 #####
 # IAM Role
 #####
@@ -54,6 +56,7 @@ resource "aws_iam_role" "this" {
     var.tags
   )
 }
+
 
 #####
 # IAM Role Policy attachments

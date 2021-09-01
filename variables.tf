@@ -12,6 +12,7 @@ variable "tags" {
   default     = {}
 }
 
+
 #####
 # Kubernetes
 #####
@@ -26,6 +27,7 @@ variable "kubernetes_service_account" {
   type        = string
 }
 
+
 #####
 # EKS
 #####
@@ -39,6 +41,7 @@ variable "iam_openid_connect_provider_arn" {
   description = "ARN of the AWS IAM OpenID Connect provider to use."
   type        = string
 }
+
 
 #####
 # IAM Role
@@ -84,6 +87,7 @@ variable "iam_role_permissions_boundary" {
   default     = null
   type        = string
 }
+
 
 #####
 # IAM Role Policy Attachments
