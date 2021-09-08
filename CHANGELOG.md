@@ -11,7 +11,7 @@
   * pins `terraform` to `>= 0.14`.
   * pins `aws` provider to `>= 3.0`.
 * refactor: lint code in example test cases.
-* refactor: get rid of disabled test case
+* refactor: get rid of disabled test case.
 * refactor: lint code in root module.
 
 0.1.1
