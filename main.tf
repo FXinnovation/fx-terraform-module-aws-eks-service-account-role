@@ -42,7 +42,7 @@ data "aws_iam_policy_document" "this" {
 resource "aws_iam_role" "this" {
   count = var.enabled ? 1 : 0
 
-  assume_role_policy    = element(concat(data.aws_iam_policy_document.this.*.json, list("")), 0)
+  assume_role_policy    = element(concat(data.aws_iam_policy_document.this.*.json, [""]), 0)
   name                  = var.iam_role_name
   name_prefix           = var.iam_role_name_prefix
   force_detach_policies = var.iam_role_force_dettach_policies
@@ -65,6 +65,6 @@ resource "aws_iam_role" "this" {
 resource "aws_iam_role_policy_attachment" "this" {
   count = var.enabled ? var.iam_policy_arns_count : 0
 
-  role       = element(concat(aws_iam_role.this.*.name, list("")), 0)
+  role       = element(concat(aws_iam_role.this.*.name, [""]), 0)
   policy_arn = var.iam_policy_arns[count.index]
 }
